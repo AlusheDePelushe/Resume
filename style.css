@@ -48,7 +48,8 @@ ul, li {
     color: #B19CD9;
     text-transform: uppercase;
     font-weight: 600;
-    padding-left: 5rem;
+    padding: 0 1rem 0 5rem;
+    align-items: center;
 }
 
 .contenedor--header{
@@ -69,6 +70,7 @@ ul, li {
     color: var(--acento1);
     font-size: large;
 }
+
 /** Hero **/
 .hero{
     display: flex;
@@ -181,9 +183,8 @@ ul, li {
 
 /* lenguajes */
 .contenedor--lenguajes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
     gap: 1rem;
     margin-bottom: 1rem;
 }
@@ -192,7 +193,7 @@ ul, li {
     background-color: var(--acento1);
     color: white;
     padding: .2rem 1rem;
-    border-radius: 1rem;
+    border-radius: 0 1rem 0 0;
     font-size: larger;
     text-transform: uppercase;
 }
@@ -201,21 +202,233 @@ ul, li {
 .contenedor-contacto{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    text-align: center;
 }
 
 .contacto--detalle{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 1rem 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: .5rem 0;
     background-color: var(--comp1);
     color: var(--blanco);
 }
 
-.contacto--texto{
-    padding: auto 0;
+.svg-contacto{
+    height: max-content;
+}
+.contacto--texto, 
+.contacto--label,
+.svg-contacto{
+    margin: auto 0;
+    text-align: center;
+}
+
+.localidad{
+    grid-column: span 2;
+}
+.contact{
+    margin-bottom: 0;
 }
 
 .contacto-img{
+    width: 100%;
+}
+
+.importante{
+    color: var(--acento1);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* preparación */
+.contenedor--cursos {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 1rem;
+padding: 0 1rem;
+}
+
+.cursos--tarjetas{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.cursos--tarjetas > * {
+    margin: auto 0;
+}
+.curso--titulo{
+    font-weight: bold;
+}
+
+.info-curso{
+    font-size: larger;
+}
+
+.img-preparacion{
+    height: 200px;
+    grid-row: span 3;
+    border-radius: 50%;
+    float: left;
+}
+
+.cursos-detalle{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* Media Queries Tablet*/
+
+@media (max-width: 992px){
+    .cuerpo{
+        width: 100%;
+    }
+
+    .iniciales{
+        padding:0;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding-bottom: .5rem;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero--img{
+        border-radius: 50%;
+        width: fit-content;
+        margin: 10px 0;
+    }
+
+    .contenedor--experiencia{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    }
+
+    .tarjetas--exp{
+        margin: .2rem;
+    }
+
+    .contenedor--skills{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .contenedor-barra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .contenedor--lenguajes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+
+    .contenedor-contacto {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .contacto--detalle{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto-img{
+        width: 100%;
+    }
+
+    .localidad{
+        grid-column: span 1;
+    }
+}
+
+/* Media Queries celular*/
+
+@media (max-width: 576px){
+    .cuerpo{
+        width: 100%;
+    }
+
+    .iniciales{
+        padding:0;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding-bottom: .5rem;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero--img{
+        border-radius: 50%;
+        width: fit-content;
+        margin: 10px 0;
+    }
+
+    .contenedor--experiencia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjetas--exp{
+        margin: .2rem;
+        width: 80%;
+    }
+
+    .contenedor--skills{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenedor-barra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 1rem;
+    }
+
+    .contenedor--lenguajes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+
+    .contenedor-contacto {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contacto-img{
+        Object-fit: none;
+        height: 12rem;
+    }
+
+    .contenedor--cursos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+}
 
 }
