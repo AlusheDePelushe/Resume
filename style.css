@@ -1,0 +1,221 @@
+:root {
+    font-family: 'Amiko', sans-serif;
+    font-family: 'Noto Sans', sans-serif;    
+
+    --fondo: #F5F5F5;
+    --blanco: #fff;
+    --comp1: #0A192F;
+    --comp2: #3B5249;
+    --acento1: #FFA500;
+    --acento2: #B19CD9;
+    --acento3: #4C2A85;
+}
+
+body{
+    background-color: var(--fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    margin: 0px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.cuerpo{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabecera */
+.header{
+    width: 100%;
+    height: 10rem;
+    background-color: var(--comp1);
+    display: flex;
+    flex-direction: row;
+    color: var(--blanco);
+    margin-bottom: 1rem;
+}
+
+.iniciales{
+    font-size: 100px;
+    color: #B19CD9;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 5rem;
+}
+
+.contenedor--header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header--titulo{
+    text-transform: uppercase;
+    font-size: 2rem;;
+    margin: 0 1rem;
+    color: var(--blanco);
+}
+
+.header--texto{
+    margin: 0 1rem;
+    color: var(--acento1);
+    font-size: large;
+}
+/** Hero **/
+.hero{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.hero--img{
+    border-radius: 50%;
+    height: 400px;
+    margin: 10px 0;
+}
+
+.hero--container{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero--container__texto {
+    text-align: center;
+    font-weight: 400;
+    font-size:xx-large;
+}
+
+/** About **/
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.label--title{
+    background-color: var(--fondo);
+    color:var(--acento1);
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    border-top: solid 3px;
+}
+
+.about--texto, .contacto--texto {
+    padding: .2rem 1rem;
+    text-align: justify;
+    font-size: large;
+}
+
+/** Experiencia **/
+.contenedor--experiencia{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+
+.tarjetas--exp{
+    background-color: var(--comp1);
+    margin: 1rem;
+    padding: 1rem;
+    color: #F5F5F5;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+.imagen--empresa{
+    border-radius: 1rem;
+    border: white 3px solid;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 210px;  
+    width: 210px;
+}
+
+.titulo--mini{
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: 600;
+}
+
+/* Habilidades */
+
+.skills{
+
+}
+
+.contenedor--skills{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:.5rem;
+}
+
+.contenedor-barra{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: .5rem;
+}
+
+.skill{
+    text-align: right;
+}
+
+.progreso{
+    margin: 0;
+    height: 50px;
+}
+
+/* lenguajes */
+.contenedor--lenguajes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.lenguaje{
+    background-color: var(--acento1);
+    color: white;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+/* Contacto */
+.contenedor-contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.contacto--detalle{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 0;
+    background-color: var(--comp1);
+    color: var(--blanco);
+}
+
+.contacto--texto{
+    padding: auto 0;
+}
+
+.contacto-img{
+
+}
