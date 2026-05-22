@@ -130,35 +130,106 @@
             transition: width 1s ease-in-out;
         }
     </style>
+
 </head>
 
 <body class="bg-background text-on-background font-body-md antialiased">
     <!-- Top Navigation Shell -->
-    <nav
-        class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-stack-md bg-deep-navy shadow-md">
-        <div class="text-headline-md font-headline-md font-bold text-on-primary tracking-tighter">
-            Jesús Alberto
-        </div>
-        <div class="hidden md:flex items-center gap-stack-lg">
-            <a class="text-vibrant-orange font-bold border-b-2 border-vibrant-orange pb-1 font-label-md text-label-md"
-                href="#inicio">Inicio</a>
-            <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
-                href="#servicios">Servicios</a>
-            <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
-                href="#acerca">Sobre mí</a>
-            <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
-                href="#experiencia">Experiencia</a>
-            <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
-                href="#preparación">Educación</a>
-            <!--
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-deep-navy shadow-md">
+
+        <div class="flex justify-between items-center px-gutter py-stack-md max-w-container-max mx-auto">
+
+            <!-- Logo -->
+            <div class="text-headline-md font-headline-md font-bold text-on-primary tracking-tighter">
+                Jesús Alberto
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-stack-lg">
+
+                <a class="text-vibrant-orange font-bold border-b-2 border-vibrant-orange pb-1 font-label-md text-label-md"
+                    href="#inicio">
+                    Inicio
+                </a>
+
                 <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
-                href="#contacto">Contacto</a>
--->
+                    href="#servicios">
+                    Servicios
+                </a>
+
+                <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
+                    href="#acerca">
+                    Sobre mí
+                </a>
+
+                <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
+                    href="#experiencia">
+                    Experiencia
+                </a>
+
+                <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
+                    href="#preparación">
+                    Educación
+                </a>
+
+            </div>
+
+            <!-- Desktop Button -->
+            <a class="hidden md:block bg-vibrant-orange text-on-primary px-stack-lg py-2 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all active:scale-95 duration-100"
+                href="#contacto">
+
+                Contact Me
+
+            </a>
+
+            <!-- Mobile Button -->
+            <button id="mobile-menu-button" class="md:hidden text-on-primary">
+
+                <span class="material-symbols-outlined text-[36px]">
+                    menu
+                </span>
+
+            </button>
+
         </div>
-        <a class="bg-vibrant-orange text-on-primary px-stack-lg py-2 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all active:scale-95 duration-100"
-            href="#contacto">
-            Contact Me
-        </a>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-deep-navy border-t border-white/10">
+
+            <div class="flex flex-col px-gutter py-stack-md gap-stack-md">
+
+                <a class="text-on-primary hover:text-vibrant-orange transition-colors" href="#inicio">
+                    Inicio
+                </a>
+
+                <a class="text-on-primary hover:text-vibrant-orange transition-colors" href="#servicios">
+                    Servicios
+                </a>
+
+                <a class="text-on-primary hover:text-vibrant-orange transition-colors" href="#acerca">
+                    Sobre mí
+                </a>
+
+                <a class="text-on-primary hover:text-vibrant-orange transition-colors" href="#experiencia">
+                    Experiencia
+                </a>
+
+                <a class="text-on-primary hover:text-vibrant-orange transition-colors" href="#preparación">
+                    Educación
+                </a>
+
+                <a class="bg-vibrant-orange text-on-primary px-stack-lg py-3 rounded-lg text-center font-label-md"
+                    href="#contacto">
+
+                    Contact Me
+
+                </a>
+
+            </div>
+
+        </div>
+
     </nav>
     <main class="mt-24">
         <!-- Hero Section -->
@@ -293,7 +364,9 @@
                             <span class="material-symbols-outlined text-[40px]">Empty_Dashboard</span>
                         </div>
                         <h3 class="font-headline-l text-headline-xl text-deep-navy mb-2">Gestor de Proyectos</h3>
-                        <p class="text-slate-gray font-body-md text-body-md">Planificación y gestión de proyectos IT, coordinando recursos, tiempos y necesidades para garantizar resultados eficientes y de alta calidad.</p>
+                        <p class="text-slate-gray font-body-md text-body-md">Planificación y gestión de proyectos IT,
+                            coordinando recursos, tiempos y necesidades para garantizar resultados eficientes y de alta
+                            calidad.</p>
                     </div>
 
                     <!-- Service 5 -->
@@ -304,10 +377,12 @@
                             <span class="material-symbols-outlined text-[40px]">Device_Hub</span>
                         </div>
                         <h3 class="font-headline-l text-headline-xl text-deep-navy mb-2">Infraestructura</h3>
-                        <p class="text-slate-gray font-body-md text-body-md">Administración y mantenimiento de entornos tecnológicos empresariales, garantizando estabilidad, conectividad y rendimiento operativo.</p>
+                        <p class="text-slate-gray font-body-md text-body-md">Administración y mantenimiento de entornos
+                            tecnológicos empresariales, garantizando estabilidad, conectividad y rendimiento operativo.
+                        </p>
                     </div>
-                    
-                    
+
+
                     <!-- Service 7 -->
                     <div
                         class="bg-white p-stack-lg rounded-xl shadow-md hover:shadow-xl transition-shadow border border-surface-variant group">
@@ -316,7 +391,8 @@
                             <span class="material-symbols-outlined text-[40px]">Cloud</span>
                         </div>
                         <h3 class="font-headline-l text-headline-xl text-deep-navy mb-2">Cloud</h3>
-                        <p class="text-slate-gray font-body-md text-body-md">Implementación y gestión de soluciones en la nube, asegurando disponibilidad, seguridad y rendimiento de los servicios.</p>
+                        <p class="text-slate-gray font-body-md text-body-md">Implementación y gestión de soluciones en
+                            la nube, asegurando disponibilidad, seguridad y rendimiento de los servicios.</p>
                     </div>
 
                     <!-- Service 7 -->
@@ -327,10 +403,11 @@
                             <span class="material-symbols-outlined text-[40px]">Security</span>
                         </div>
                         <h3 class="font-headline-l text-headline-xl text-deep-navy mb-2">Ciberseguridad</h3>
-                        <p class="text-slate-gray font-body-md text-body-md">Aplicación de buenas prácticas de seguridad, control de accesos y protección de infraestructura tecnológica.</p>
+                        <p class="text-slate-gray font-body-md text-body-md">Aplicación de buenas prácticas de
+                            seguridad, control de accesos y protección de infraestructura tecnológica.</p>
                     </div>
                 </div>
-                
+
             </div>
         </section>
 
@@ -715,10 +792,10 @@
     <footer
         class="w-full py-stack-lg px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md mt-section-gap bg-deep-navy">
         <div class="text-headline-md font-headline-md font-bold text-on-primary">
-            Jesús Alberto
+            Jesús Contreras R.
         </div>
         <p class="text-slate-gray font-body-md text-body-md text-center">
-            Free Code Craft.
+
         </p>
         <div class="flex gap-stack-md">
             <a class="text-slate-gray hover:text-vibrant-orange transition-colors font-label-sm text-label-sm"
@@ -832,6 +909,31 @@
 
         })();
     </script>
+
+    <script>
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+
+            mobileMenu.classList.toggle('hidden');
+
+        });
+
+        // Cerrar menú al hacer click en una opción
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+
+            link.addEventListener('click', () => {
+
+                mobileMenu.classList.add('hidden');
+
+            });
+
+        });
+
+    </script>
+
 </body>
 
 </html>
