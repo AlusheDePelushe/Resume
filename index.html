@@ -1,228 +1,738 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html class="scroll-smooth" lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiko:wght@400;700&family=Noto+Sans:wght@300;900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Jesús Alberto Contreras Ramírez | Portfolio Profesional IT</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Montserrat:wght@600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#565e74",
+                        "surface-variant": "#e0e3e5",
+                        "on-primary-container": "#7c839b",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#c6c6cd",
+                        "on-surface-variant": "#45464d",
+                        "vibrant-orange": "#F97316",
+                        "surface-container": "#eceef0",
+                        "error": "#ba1a1a",
+                        "on-tertiary-container": "#3980f4",
+                        "surface-container-low": "#f2f4f6",
+                        "on-tertiary-fixed-variant": "#004395",
+                        "surface": "#f7f9fb",
+                        "on-error-container": "#93000a",
+                        "secondary": "#9d4300",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "surface-bright": "#f7f9fb",
+                        "success-emerald": "#10B981",
+                        "on-secondary-fixed": "#341100",
+                        "surface-container-high": "#e6e8ea",
+                        "surface-dim": "#d8dadc",
+                        "inverse-surface": "#2d3133",
+                        "secondary-fixed-dim": "#ffb690",
+                        "on-secondary-container": "#5c2400",
+                        "background": "#f7f9fb",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#783200",
+                        "secondary-fixed": "#ffdbca",
+                        "tertiary-fixed": "#d8e2ff",
+                        "primary": "#000000",
+                        "sky-blue": "#3B82F6",
+                        "inverse-primary": "#bec6e0",
+                        "on-tertiary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "tertiary": "#000000",
+                        "primary-container": "#131b2e",
+                        "surface-container-highest": "#e0e3e5",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#dae2fd",
+                        "tertiary-container": "#001a42",
+                        "on-tertiary-fixed": "#001a42",
+                        "slate-gray": "#64748B",
+                        "on-primary-fixed": "#131b2e",
+                        "secondary-container": "#fd761a",
+                        "primary-fixed-dim": "#bec6e0",
+                        "on-background": "#191c1e",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#adc6ff",
+                        "deep-navy": "#0F172A",
+                        "outline": "#76777d",
+                        "on-surface": "#191c1e",
+                        "inverse-on-surface": "#eff1f3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "stack-lg": "32px",
+                        "gutter": "24px",
+                        "section-gap": "80px",
+                        "stack-md": "16px",
+                        "margin-mobile": "16px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "headline-xl-mobile": ["Montserrat"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Montserrat"],
+                        "display-lg": ["Montserrat"],
+                        "headline-xl": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
 
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
+        }
+
+        .skill-bar-fill {
+            transition: width 1s ease-in-out;
+        }
+    </style>
 </head>
-<body>
-<div class="cuerpo">  <!-- Contenedor principal -->
-    <section class="header">
-        <div class="iniciales"> jc </div>
-        <div class="contenedor--header">
-            <h1 class="header--titulo">Jesús Alberto Contreras Ramírez</h1>
-            <p class="header--texto importante">Web Designer, IT support, ProgramMer & a little bit more.</p>
+
+<body class="bg-background text-on-background font-body-md antialiased">
+    <!-- Top Navigation Shell -->
+    <nav
+        class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-stack-md max-w-container-max mx-auto bg-deep-navy shadow-md">
+        <div class="text-headline-md font-headline-md font-bold text-on-primary tracking-tighter">
+            Jesús Alberto
         </div>
-    </section>
-
-    <section class="hero">
-        <img src="./img/foto.jpg" alt="" class="hero--img">
-        <div class="hero--container">
-            <h2 class="hero--container__texto">"No se trata de saberlo todo, sino, de tener la destreza para encontrar lo que se necesita."</h2>
+        <div class="hidden md:flex items-center gap-stack-lg">
+            <a class="text-vibrant-orange font-bold border-b-2 border-vibrant-orange pb-1 font-label-md text-label-md"
+                href="#inicio">Inicio</a>
+            <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
+                href="#servicios">Servicios</a>
+            <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
+                href="#acerca">Sobre mí</a>
+            <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
+                href="#experiencia">Experiencia</a>
+            <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
+                href="#preparación">Educación</a>
+<!--
+                <a class="text-on-primary/80 hover:text-on-primary transition-colors font-label-md text-label-md"
+                href="#contacto">Contacto</a>
+-->
         </div>
-    </section>
-
-    <section class="about">
-        <h2 class="label--title"> Acerca de mi </h2>
-        <p class="about--texto"> Actualmente tengo 36 años, originario de Guadalajara, Jalisco, México</p>
-        <p class="about--texto">Mi trayectoria profesional comenzó hace 9 años en el campo de sistemas, iniciando mi recorrido en el equipo de soporte técnico de Nivel 1.</p>
-        <p class="about--texto">En los primeros 8 años, me enfoqué y desarrollé en el área  de sistemas, obteniendo experiencia en Soporte L1, Servicio Técnico, Infraestructura, Atención a Clientes y Usuarios, Servidores, Bases de Datos y Programación.</p>
-        <p class="about--texto">Sin embargo, fue el desarrollo de software lo que impulsó mi evolución profesional, llevándome a especializarme en el desarrollo web y en el diseño de aplicaciones. Estas áreas se han convertido en el núcleo de mi formación y experiencia actual.</p>
-    </section>
-
-    <section class="experience">
-        <h2 class="label--title"> Colaboraciones </h2>
-        <div class="contenedor--experiencia">
-            <div class="tarjetas--exp">
-                <img src="./img/neo-logo.jpg" alt="" class="imagen--empresa">
-                <div class="titulo--mini"> Neoris sa. de cv. </div>
-                <div class="puesto"> Soporte Base de Datos SQL </div>
-                <div class="puesto importante"> Actual </div>
+        <a class="bg-vibrant-orange text-on-primary px-stack-lg py-2 rounded-lg font-label-md text-label-md hover:opacity-90 transition-all active:scale-95 duration-100"
+            href="#contacto">
+            Contact Me
+        </a>
+    </nav>
+    <main class="mt-24">
+        <!-- Hero Section -->
+        <section
+            class="max-w-container-max mx-auto px-gutter py-section-gap flex flex-col-reverse md:flex-row items-center gap-stack-lg"
+            id="inicio">
+            <div class="flex-1 space-y-stack-md">
+                <h1 class="font-display-lg text-display-lg text-deep-navy leading-tight">
+                    Jesús Alberto Contreras Ramírez
+                </h1>
+                <p class="font-headline-md text-headline-md text-slate-gray">
+                    Lic. Tecnologías de la Información
+                </p>
+                <blockquote
+                    class="border-l-4 border-vibrant-orange pl-stack-md italic text-on-surface-variant font-body-lg text-body-lg py-4 bg-surface-container-low rounded-r-lg">
+                    "Web Designer, IT support, Programmer y un poco más. No se trata de saberlo todo, sino, de tener la destreza para encontrar lo que se necesita."
+                </blockquote>
+<!--                <div class="pt-stack-md">
+                    <button
+                        class="bg-deep-navy text-on-primary px-8 py-4 rounded-lg font-headline-md text-headline-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        Contratar Servicios
+                    </button>
+                </div>
+-->
             </div>
-
-            <div class="tarjetas--exp">
-                <img src="./img/disclogo.png" alt="" class="imagen--empresa">
-                <div class="titulo--mini"> disc sa. de cv.</div>
-                <div class="puesto"> Soporte Sistemas</div>
-                <div class="puesto"> Nov 2021 – Nov 2022 </div>
+            <div class="flex-1 flex justify-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-vibrant-orange/10 rounded-full blur-3xl"></div>
+                    <img alt="Jesús Alberto"
+                        class="relative w-80 h-80 md:w-[480px] md:h-[480px] object-cover rounded-full border-8 border-white shadow-2xl"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0uiw0BmAM1VlAEL-e1hgXWOadtk2gc3q-PY_FUHwWXXHmLPkjad9qBuIWdq2rcVu5YBy_cGAUtYt8on-8G6W52xnCtoFo51fBQ3aZqZEp986XhhzAJj8GXT2SdVVLjNWZWAnnxrNzxvWNZKczZhU1lOEwr992NjPhtgrYJQS1K2ckBPMcJE22ekFL-bh1cShUs5LvyyqwEQ_nYb3qFhT3Fr1jiZqY2m8yz8jlLGsaec6Nrb8AU3p47tm" />
+                </div>
             </div>
-
-            <div class="tarjetas--exp">
-                <img src="./img/arizlu-logo.jpg" alt="" class="imagen--empresa">
-                <div class="titulo--mini"> Arizlu sa. de cv. </div>
-                <div class="puesto"> Administrador Sistemas </div>
-                <div class="puesto">  Oct 2020 – Oct 2021 </div>
+        </section>
+        <!-- Services Section -->
+        <section class="bg-surface-container-low py-section-gap" id="servicios">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <div class="text-center mb-stack-lg">
+                    <h2 class="font-display-lg text-display-lg text-deep-navy mb-4">Servicios</h2>
+                    <div class="w-24 h-1 bg-vibrant-orange mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+                    <!-- Service 1 -->
+                    <div
+                        class="bg-white p-stack-lg rounded-xl shadow-md hover:shadow-xl transition-shadow border border-surface-variant group">
+                        <div
+                            class="w-16 h-16 bg-vibrant-orange/10 rounded-lg flex items-center justify-center mb-stack-md group-hover:bg-vibrant-orange group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-[40px]">web</span>
+                        </div>
+                        <h3 class="font-headline-l text-headline-xl text-deep-navy mb-2">Diseño Web</h3>
+                        <p class="text-slate-gray font-body-md text-body-md">Creación de interfaces modernas,
+                            responsivas y centradas en el usuario con las últimas tecnologías.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div
+                        class="bg-white p-stack-lg rounded-xl shadow-md hover:shadow-xl transition-shadow border border-surface-variant group">
+                        <div
+                            class="w-16 h-16 bg-sky-blue/10 rounded-lg flex items-center justify-center mb-stack-md group-hover:bg-sky-blue group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-[40px]">support_agent</span>
+                        </div>
+                        <h3 class="font-headline-l text-headline-xl text-deep-navy mb-2">Soporte IT</h3>
+                        <p class="text-slate-gray font-body-md text-body-md">Soluciones técnicas especializadas en
+                            infraestructura, servidores y atención de nivel superior.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div
+                        class="bg-white p-stack-lg rounded-xl shadow-md hover:shadow-xl transition-shadow border border-surface-variant group">
+                        <div
+                            class="w-16 h-16 bg-deep-navy/10 rounded-lg flex items-center justify-center mb-stack-md group-hover:bg-deep-navy group-hover:text-white transition-colors">
+                            <span class="material-symbols-outlined text-[40px]">code</span>
+                        </div>
+                        <h3 class="font-headline-l text-headline-xl text-deep-navy mb-2">Programación</h3>
+                        <p class="text-slate-gray font-body-md text-body-md">Desarrollo de software robusto y eficiente
+                            utilizando lenguajes como Python, PL/SQL y C++.</p>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- Acerca de Mi Section -->
+        <section class="max-w-container-max mx-auto px-gutter py-section-gap" id="acerca">
+            <div class="flex flex-col md:flex-row gap-stack-lg items-center">
+                <div class="flex-1">
+                    <h2 class="font-display-lg text-display-lg text-deep-navy mb-stack-md">Acerca de mi</h2>
+                    <div class="space-y-stack-md text-on-surface-variant font-body-lg text-body-lg leading-relaxed">
+                        <p>Actualmente tengo <span id="mi-edad">XX</span> años, originario de Guadalajara, Jalisco, México.</p>
+                        <p>
+                            Mi primer oportunidad llego con Grupo Modelo en su área de sistemas. Ahí, me di
+                            cuenta que el mundo de la tecnología era mi verdadera pasión, y desde entonces, 
+                            he estado en un viaje constante de aprendizaje y crecimiento en el ámbito IT.
+                        </p>
+                        <p>
+                            A traves de los años he adquirido el conocimiento en diversas áreas de 
+                            tecnología, pasando por soporte técnico, administración de sistemas, 
+                            infraestructura, redes y bases de datos. Lo que me ha permitido desarrollar una
+                            perspectiva integral.</p>
 
-            <div class="tarjetas--exp">
-                <img src="./img/ixtle-logo.jpg" alt="" class="imagen--empresa">
-                <div class="titulo--mini"> Ixtle sa. de cv. </div>
-                <div class="puesto"> Administrador Sistemas </div>
-                <div class="puesto"> Feb 2020 - Oct 2020 </div>
+                        </p>
+                        <p>
+                            Mi enfoque se centra en la atención a clientes y usuarios, brindando soluciones
+                            efectivas y eficientes. Además, tengo experiencia en programación y desarrollo,
+                            lo que me permite abordar desafíos técnicos con creatividad y precisión.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-1 w-full grid grid-cols-2 gap-4">
+                    <div
+                        class="bg-surface-container-high p-stack-lg rounded-xl flex flex-col items-center justify-center text-center">
+                        <span class="text-vibrant-orange font-display-lg text-display-lg">9+</span>
+                        <span class="font-label-md text-label-md text-slate-gray">Años de Experiencia</span>
+                    </div>
+                    <div
+                        class="bg-deep-navy p-stack-lg rounded-xl flex flex-col items-center justify-center text-center">
+                        <span class="text-on-primary font-display-lg text-display-lg">20+</span>
+                        <span class="font-label-md text-label-md text-on-primary/60">Proyectos Listos</span>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="tarjetas--exp">
-                <img src="./img/polesa-logo.jpg" alt="" class="imagen--empresa">
-                <div class="titulo--mini"> Polesa sa. de cv. </div>
-                <div class="puesto"> Soporte Técnico en Sitio </div>
-                <div class="puesto"> Abr 2019 – Dic 2020 </div>
+        <!-- Experience Timeline -->
+        <section class="bg-deep-navy py-section-gap overflow-hidden" id="experiencia">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <div class="text-center mb-stack-lg">
+                    <h2 class="font-display-lg text-display-lg text-on-primary mb-4">Colaboraciones</h2>
+                    <div class="w-24 h-1 bg-vibrant-orange mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-stack-md">
+                    
+                    <!-- Keptos -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-stack-md rounded-xl backdrop-blur-sm hover:border-vibrant-orange/50 transition-all group">
+                        <span
+                            class="text-vibrant-orange font-label-sm text-label-sm tracking-widest uppercase">Actual</span>
+                        <h3
+                            class="text-on-primary font-headline-md text-headline-md mt-1 group-hover:text-vibrant-orange transition-colors">
+                            Keptos IT Services sa. de cv</h3>
+                        <p class="text-on-primary/80 font-body-md text-body-md mt-1">Gestor de TI</p>
+                    </div>
+
+                    <!-- Neoris -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-stack-md rounded-xl backdrop-blur-sm hover:border-vibrant-orange/50 transition-all group">
+                        <span
+                            class="text-slate-gray font-label-sm text-label-sm tracking-widest uppercase">Nov 2022 - Abr 2025</span>
+                        <h3
+                            class="text-on-primary font-headline-md text-headline-md mt-1 group-hover:text-vibrant-orange transition-colors">
+                            Neoris sa. de cv.</h3>
+                        <p class="text-on-primary/80 font-body-md text-body-md mt-1">Soporte Base de Datos SQL</p>
+                    </div>
+                    <!-- disc -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-stack-md rounded-xl backdrop-blur-sm hover:border-vibrant-orange/50 transition-all group">
+                        <span class="text-slate-gray font-label-sm text-label-sm tracking-widest uppercase">Nov 2021 –
+                            Nov 2022</span>
+                        <h3
+                            class="text-on-primary font-headline-md text-headline-md mt-1 group-hover:text-vibrant-orange transition-colors">
+                            disc sa. de cv.</h3>
+                        <p class="text-on-primary/80 font-body-md text-body-md mt-1">Soporte Sistemas</p>
+                    </div>
+                    <!-- Arizlu -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-stack-md rounded-xl backdrop-blur-sm hover:border-vibrant-orange/50 transition-all group">
+                        <span class="text-slate-gray font-label-sm text-label-sm tracking-widest uppercase">Oct 2020 –
+                            Oct 2021</span>
+                        <h3
+                            class="text-on-primary font-headline-md text-headline-md mt-1 group-hover:text-vibrant-orange transition-colors">
+                            Arizlu sa. de cv.</h3>
+                        <p class="text-on-primary/80 font-body-md text-body-md mt-1">Administrador Sistemas</p>
+                    </div>
+                    <!-- Ixtle -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-stack-md rounded-xl backdrop-blur-sm hover:border-vibrant-orange/50 transition-all group">
+                        <span class="text-slate-gray font-label-sm text-label-sm tracking-widest uppercase">Feb 2020 -
+                            Oct 2020</span>
+                        <h3
+                            class="text-on-primary font-headline-md text-headline-md mt-1 group-hover:text-vibrant-orange transition-colors">
+                            Ixtle sa. de cv.</h3>
+                        <p class="text-on-primary/80 font-body-md text-body-md mt-1">Administrador Sistemas</p>
+                    </div>
+                    <!-- Polesa -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-stack-md rounded-xl backdrop-blur-sm hover:border-vibrant-orange/50 transition-all group">
+                        <span class="text-slate-gray font-label-sm text-label-sm tracking-widest uppercase">Abr 2019 –
+                            Dic 2020</span>
+                        <h3
+                            class="text-on-primary font-headline-md text-headline-md mt-1 group-hover:text-vibrant-orange transition-colors">
+                            Polesa sa. de cv.</h3>
+                        <p class="text-on-primary/80 font-body-md text-body-md mt-1">Soporte Técnico en Sitio</p>
+                    </div>
+                    <!-- AndreBadi -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-stack-md rounded-xl backdrop-blur-sm hover:border-vibrant-orange/50 transition-all group">
+                        <span class="text-slate-gray font-label-sm text-label-sm tracking-widest uppercase">Jul 2017 –
+                            Mar 2019</span>
+                        <h3
+                            class="text-on-primary font-headline-md text-headline-md mt-1 group-hover:text-vibrant-orange transition-colors">
+                            AndreBadi sa. de cv.</h3>
+                        <p class="text-on-primary/80 font-body-md text-body-md mt-1">Soporte a Punto de Venta</p>
+                    </div>
+                    <!-- Grupo Modelo -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-stack-md rounded-xl backdrop-blur-sm hover:border-vibrant-orange/50 transition-all group">
+                        <span class="text-slate-gray font-label-sm text-label-sm tracking-widest uppercase">Oct 2015 –
+                            Feb 2017</span>
+                        <h3
+                            class="text-on-primary font-headline-md text-headline-md mt-1 group-hover:text-vibrant-orange transition-colors">
+                            Grupo Modelo sa. de cv.</h3>
+                        <p class="text-on-primary/80 font-body-md text-body-md mt-1">Help Desk Contact Center</p>
+                    </div>
+                    <!-- Atención Telefónica -->
+                    <div
+                        class="bg-white/5 border border-white/10 p-stack-md rounded-xl backdrop-blur-sm hover:border-vibrant-orange/50 transition-all group">
+                        <span class="text-slate-gray font-label-sm text-label-sm tracking-widest uppercase">Jul 2008 –
+                            Sep 2014</span>
+                        <h3
+                            class="text-on-primary font-headline-md text-headline-md mt-1 group-hover:text-vibrant-orange transition-colors">
+                            Atención Telefónica</h3>
+                        <p class="text-on-primary/80 font-body-md text-body-md mt-1">Agente/Supervisor Telefónico</p>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- Skills & Languages Section -->
+        <section class="max-w-container-max mx-auto px-gutter py-section-gap">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Technical Skills -->
+                <div>
+                    <h2 class="font-display-lg text-display-lg text-deep-navy mb-stack-lg">Skills</h2>
+                    <div class="space-y-stack-md">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-label-md text-label-md text-on-surface-variant">Atención a clientes /
+                                    usuarios</span>
+                                <span class="font-label-md text-label-md text-vibrant-orange">95%</span>
+                            </div>
+                            <div class="h-2 bg-surface-container rounded-full overflow-hidden">
+                                <div class="h-full bg-vibrant-orange skill-bar-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-label-md text-label-md text-on-surface-variant">Soporte primer
+                                    nivel</span>
+                                <span class="font-label-md text-label-md text-vibrant-orange">90%</span>
+                            </div>
+                            <div class="h-2 bg-surface-container rounded-full overflow-hidden">
+                                <div class="h-full bg-vibrant-orange skill-bar-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-label-md text-label-md text-on-surface-variant">Infraestructura</span>
+                                <span class="font-label-md text-label-md text-sky-blue">80%</span>
+                            </div>
+                            <div class="h-2 bg-surface-container rounded-full overflow-hidden">
+                                <div class="h-full bg-sky-blue skill-bar-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-label-md text-label-md text-on-surface-variant">Programación &amp;
+                                    Desarrollo</span>
+                                <span class="font-label-md text-label-md text-sky-blue">75%</span>
+                            </div>
+                            <div class="h-2 bg-surface-container rounded-full overflow-hidden">
+                                <div class="h-full bg-sky-blue skill-bar-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="tarjetas--exp">
-                <img src="./img/andrebadi-logo.png" alt="" class="imagen--empresa">
-                <div class="titulo--mini"> AndreBadi sa. de cv. </div>
-                <div class="puesto"> Soporte a Punto de Venta </div>
-                <div class="puesto">  Jul 2017 – Mar 2019 </div>
+                <!-- Programming Languages -->
+                <div>
+                    <h2 class="font-display-lg text-display-lg text-deep-navy mb-stack-lg">Lenguajes de programación
+                    </h2>
+                    <div class="flex flex-wrap gap-stack-sm">
+                        <span
+                            class="bg-vibrant-orange/10 text-vibrant-orange px-stack-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider border border-vibrant-orange/20">C++</span>
+                        <span
+                            class="bg-vibrant-orange/10 text-vibrant-orange px-stack-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider border border-vibrant-orange/20">PL/SQL</span>
+                        <span
+                            class="bg-vibrant-orange/10 text-vibrant-orange px-stack-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider border border-vibrant-orange/20">VBA</span>
+                        <span
+                            class="bg-vibrant-orange/10 text-vibrant-orange px-stack-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider border border-vibrant-orange/20">Python</span>
+                        <span
+                            class="bg-vibrant-orange/10 text-vibrant-orange px-stack-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider border border-vibrant-orange/20">HTML</span>
+                        <span
+                            class="bg-vibrant-orange/10 text-vibrant-orange px-stack-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider border border-vibrant-orange/20">CSS3</span>
+                        <span
+                            class="bg-vibrant-orange/10 text-vibrant-orange px-stack-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider border border-vibrant-orange/20">JAVA</span>
+                        <span
+                            class="bg-vibrant-orange/10 text-vibrant-orange px-stack-md py-2 rounded-full font-label-md text-label-md uppercase tracking-wider border border-vibrant-orange/20">Javascript</span>
+                    </div>
+                </div>
             </div>
+        </section>
 
+        <!-- Soft Skills Section -->
+        <section class="bg-surface-container-low py-section-gap">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <div class="text-center mb-stack-lg">
+                    <h2 class="font-display-lg text-display-lg text-deep-navy mb-4">Habilidades Interpersonales</h2>
+                    <div class="w-24 h-1 bg-vibrant-orange mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-stack-lg items-stretch">
+                    <!-- Highlight Card -->
+                    <div
+                        class="lg:col-span-2 bg-deep-navy p-stack-lg md:p-12 rounded-xl shadow-xl flex flex-col md:flex-row items-center gap-stack-lg relative overflow-hidden group">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-vibrant-orange/5 rounded-full -mr-16 -mt-16 blur-2xl group-hover:bg-vibrant-orange/10 transition-colors">
+                        </div>
+                        <div
+                            class="w-20 h-20 md:w-24 md:h-24 bg-vibrant-orange rounded-xl flex items-center justify-center flex-shrink-0 text-white shadow-lg">
+                            <span class="material-symbols-outlined text-[48px] md:text-[56px]">psychology</span>
+                        </div>
+                        <div>
+                            <h3 class="font-headline-xl text-headline-xl text-on-primary mb-4">Análisis de Soluciones a
+                                Problemas Complejos</h3>
+                            <p class="text-on-primary/80 font-body-lg text-body-lg leading-relaxed">
+                                Capacidad crítica para desglosar retos complejos y encontrar soluciones eficientes,
+                                aplicando un entendimiento profundo que trasciende el ámbito técnico para impactar en la
+                                estrategia general.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Secondary Grid -->
+                    <div class="grid grid-cols-2 lg:grid-cols-1 gap-4">
+                        <div
+                            class="bg-white p-stack-md rounded-xl border border-surface-variant shadow-sm flex items-center gap-3 hover:border-vibrant-orange/30 transition-colors">
+                            <div
+                                class="w-10 h-10 bg-vibrant-orange/10 rounded-lg flex items-center justify-center text-vibrant-orange">
+                                <span class="material-symbols-outlined text-md">forum</span>
+                            </div>
+                            <span class="font-label-md text-label-md text-deep-navy">Comunicación Asertiva</span>
+                        </div>
+                        <div
+                            class="bg-white p-stack-md rounded-xl border border-surface-variant shadow-sm flex items-center gap-3 hover:border-vibrant-orange/30 transition-colors">
+                            <div
+                                class="w-10 h-10 bg-vibrant-orange/10 rounded-lg flex items-center justify-center text-vibrant-orange">
+                                <span class="material-symbols-outlined text-md">groups</span>
+                            </div>
+                            <span class="font-label-md text-label-md text-deep-navy">Liderazgo de Equipos</span>
+                        </div>
+                        <div
+                            class="bg-white p-stack-md rounded-xl border border-surface-variant shadow-sm flex items-center gap-3 hover:border-vibrant-orange/30 transition-colors">
+                            <div
+                                class="w-10 h-10 bg-vibrant-orange/10 rounded-lg flex items-center justify-center text-vibrant-orange">
+                                <span class="material-symbols-outlined text-md">published_with_changes</span>
+                            </div>
+                            <span class="font-label-md text-label-md text-deep-navy">Adaptabilidad</span>
+                        </div>
+                        <div
+                            class="bg-white p-stack-md rounded-xl border border-surface-variant shadow-sm flex items-center gap-3 hover:border-vibrant-orange/30 transition-colors">
+                            <div
+                                class="w-10 h-10 bg-vibrant-orange/10 rounded-lg flex items-center justify-center text-vibrant-orange">
+                                <span class="material-symbols-outlined text-md">schedule</span>
+                            </div>
+                            <span class="font-label-md text-label-md text-deep-navy">Gestión del Tiempo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Courses (Bento Grid Style) -->
+        <section class="bg-surface-container py-section-gap" id="preparación">
+            <div class="max-w-container-max mx-auto px-gutter">
+                <h2 class="font-display-lg text-display-lg text-deep-navy mb-stack-lg text-center">Preparación &amp;
+                    Cursos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+                    <!-- Main Academic -->
+                    <div
+                        class="md:col-span-2 bg-white p-stack-lg rounded-xl shadow-md border border-surface-variant flex flex-col md:flex-row gap-stack-md items-center">
+                        <div class="w-32 h-32 flex-shrink-0 bg-surface-container-low rounded-lg p-4">
+                            <span class="material-symbols-outlined text-[80px] text-deep-navy">school</span>
+                        </div>
+
+                        <div>
+                            <span class="text-sky-blue font-label-sm text-label-sm tracking-widest uppercase">
+                                Carrera Profesional</span>
+                            <h3 class="font-headline-xl text-headline-xl text-deep-navy mt-1">Universidad de Guadalajara
+                                UDG</h3>
+                            <p class="text-on-surface-variant font-body-lg text-body-lg">Lic. Tecnologías de la Información (LTI)</p>
+                            <p class="text-on-surface-variant font-body-lg text-body-lg">CUCEI</p>
+                            <div class="mt-4 flex items-center gap-4">
+                                
+                                <span
+                                    class="bg-deep-navy/5 text-deep-navy px-3 py-1 rounded font-label-md text-label-md"></span>
+                                <span class="flex items-center gap-1 text-vibrant-orange font-label-md text-label-md">
+                                
+                                    <span class="w-2 h-2 bg-vibrant-orange rounded-full animate-pulse"></span> Egresado
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Course 1 -->
+                    <div class="bg-deep-navy p-stack-lg rounded-xl shadow-md flex flex-col justify-between">
+                        <div>
+                            <span
+                                class="text-vibrant-orange font-label-sm text-label-sm tracking-widest uppercase">Apasoft
+                                Training</span>
+                            <h3 class="text-on-primary font-headline-md text-headline-md mt-2">Oracle PL/SQL Avanzado
+                            </h3>
+                        </div>
+                        <div class="mt-stack-md flex justify-between items-center">
+                            <span class="text-on-primary/60 font-label-md text-label-md">10 Horas</span>
+                            <span
+                                class="bg-success-emerald text-white px-2 py-1 rounded text-[10px] font-bold uppercase">Completo</span>
+                        </div>
+                    </div>
+                    <!-- Course 2 -->
+                    <div class="bg-deep-navy p-stack-lg rounded-xl shadow-md flex flex-col justify-between">
+                        <div>
+                            <span class="text-vibrant-orange font-label-sm text-label-sm tracking-widest uppercase">Dr.
+                                Angela Yu</span>
+                            <h3 class="text-on-primary font-headline-md text-headline-md mt-2">100 Days of Code: Python
+                            </h3>
+                        </div>
+                        <div class="mt-stack-md flex justify-between items-center">
+                            <span class="text-on-primary/60 font-label-md text-label-md">54 Horas</span>
+                            <span class="bg-success-emerald text-white px-2 py-1 rounded text-[10px] font-bold uppercase">Completo</span>
+                        </div>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="bg-deep-navy p-stack-lg rounded-xl shadow-md flex flex-col justify-between">
+                        <div>
+                            <span class="text-vibrant-orange font-label-sm text-label-sm tracking-widest uppercase">Dr.
+                                Angela Yu</span>
+                            <h3 class="text-on-primary font-headline-md text-headline-md mt-2">Web Development Bootcamp
+                            </h3>
+                        </div>
+                        <div class="mt-stack-md flex justify-between items-center">
+                            <span class="text-on-primary/60 font-label-md text-label-md">62 Horas</span>
+                            <span class="bg-success-emerald text-white px-2 py-1 rounded text-[10px] font-bold uppercase">Completo</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="max-w-container-max mx-auto px-gutter py-section-gap" id="contacto">
+            <div class="bg-deep-navy rounded-3xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <div class="flex-1 p-stack-lg md:p-16 flex flex-col justify-center">
+                    <h2 class="font-display-lg text-display-lg text-on-primary mb-stack-md">Hablemos de tu próximo
+                        proyecto</h2>
+                    <div class="space-y-stack-md">
+                        <div class="flex items-center gap-stack-md group">
+                            <div
+                                class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-vibrant-orange group-hover:bg-vibrant-orange group-hover:text-white transition-all">
+                                <span class="material-symbols-outlined">mail</span>
+                            </div>
+                            <div>
+                                <p class="text-on-primary/60 text-label-sm font-label-sm uppercase">Email</p>
+                                <p class="text-on-primary font-body-lg text-body-lg">sus.contrerasr@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-stack-md group">
+                            <div
+                                class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-vibrant-orange group-hover:bg-vibrant-orange group-hover:text-white transition-all">
+                                <span class="material-symbols-outlined">call</span>
+                            </div>
+                            <div>
+                                <p class="text-on-primary/60 text-label-sm font-label-sm uppercase">Teléfono</p>
+                                <p class="text-on-primary font-body-lg text-body-lg">+52 (33) 1468-1824</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-stack-md group">
+                            <div
+                                class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-vibrant-orange group-hover:bg-vibrant-orange group-hover:text-white transition-all">
+                                <span class="material-symbols-outlined">location_on</span>
+                            </div>
+                            <div>
+                                <p class="text-on-primary/60 text-label-sm font-label-sm uppercase">Ubicación</p>
+                                <p class="text-on-primary font-body-lg text-body-lg"
+                                    data-location="Guadalajara, Jalisco, México">Guadalajara, Jalisco, México</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 min-h-[300px] relative">
+                    <img alt="Contacto"
+                        class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0ugGCOz5wJZPNPGjvAVhuIIPCbQmYhhhtCF-Y-sKYJRBpCGo1g-g6k5dvgLKHvS1Wm0Qv9MzJtl7MaCPQ2fog9YrlYVPddIdg7qC7GgH21s77Do8YC8bx_Mj1g7lc1eVf5qJg0Dd3ycPX-bUGp2n1-nPZrC7jfq3Yj941amOeSFS1L6elSDghqaYQ8j6vr_5AHaCpXbOkwU06uf1GS8ZtSE7UO7NbmPISmGFCUjdCtSSoeG2Jlfs0_x0" />
+                    <div class="absolute inset-0 bg-gradient-to-r from-deep-navy via-deep-navy/40 to-transparent"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full py-stack-lg px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md mt-section-gap bg-deep-navy">
+        <div class="text-headline-md font-headline-md font-bold text-on-primary">
+            Jesús Alberto
+        </div>
+        <p class="text-slate-gray font-body-md text-body-md text-center">
+            Free Code Craft.
+        </p>
+        <div class="flex gap-stack-md">
+            <a class="text-slate-gray hover:text-vibrant-orange transition-colors font-label-sm text-label-sm"
+                href="https://github.com/AlusheDePelushe/">GitHub</a>
+            <a class="text-slate-gray hover:text-vibrant-orange transition-colors font-label-sm text-label-sm"
+                href="mailto:sus.contrerasr@gmail.com">Email</a>
+        </div>
+    </footer>
+    <script>
+        // Simple scroll animation for skill bars
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.dataset.width;
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll('.skill-bar-fill').forEach(bar => {
+            bar.dataset.width = bar.style.width;
+            bar.style.width = '0';
+            observer.observe(bar);
+        });
+
+        // Mobile Nav Toggle (if needed in future expansion)
+        // Add active link logic based on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-vibrant-orange', 'font-bold', 'border-b-2', 'border-vibrant-orange');
+                link.classList.add('text-on-primary/80');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-vibrant-orange', 'font-bold', 'border-b-2', 'border-vibrant-orange');
+                    link.classList.remove('text-on-primary/80');
+                }
+            });
+        });
+
+        // Calcular Edad 
+        (function() {
+            function calcularEdad() {
+                const nacimiento = new Date(1987, 3, 4); // 4 de abril de 1987
+                const hoy = new Date();
+                let edad = hoy.getFullYear() - nacimiento.getFullYear();
+                const mesDiff = hoy.getMonth() - nacimiento.getMonth();
+                const diaDiff = hoy.getDate() - nacimiento.getDate();
+                
+                if (mesDiff < 0 || (mesDiff === 0 && diaDiff < 0)) {
+                    edad--;
+                }
+                return edad;
+            }
             
-            <div class="tarjetas--exp">
-                <img src="./img/grupo.jpg" alt="" class="imagen--empresa">
-                <div class="titulo--mini"> Grupo Modelo sa. de cv. </div>
-                <div class="puesto"> Help Desk Contact Center </div>
-                <div class="puesto"> Oct 2015 – Feb 2017 </div>
-            </div>
-            
-            <div class="tarjetas--exp">
-                <img src="./img/Logo_Atel.png" alt="" class="imagen--empresa">
-                <div class="titulo--mini"> Atención Telefónica</div>
-                <div class="puesto"> Agente/Supervisor Telefónico </div>
-                <div class="puesto"> Jul 2008 – Sep 2014 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="skills">
-        <h2 class="label--title"> Skills </h2>
-        <div class="contenedor--skills">
-            <div class="contenedor-barra">
-                <div class="skill"> Atención a clientes / usuarios</div>
-                <progress min="0" max="8" value="8" class="progreso"></progress>
-            </div>
-            <div class="contenedor-barra">
-                <div class="skill"> Soporte primer nivel </div>
-                <progress min="0" max="8" value="5" class="progreso"></progress>
-            </div>
-            <div class="contenedor-barra">
-                <div class="skill"> Servicio Técnico </div>
-                <progress min="0" max="8" value="5" class="progreso"></progress>
-            </div>
-            <div class="contenedor-barra">
-                <div class="skill"> Infraestructura </div>
-                <progress min="0" max="8" value="5" class="progreso"></progress>
-            </div>
-            <div class="contenedor-barra">
-                <div class="skill"> Servidores </div>
-                <progress min="0" max="8" value="4" class="progreso"></progress>
-            </div>
-            <div class="contenedor-barra">
-                <div class="skill"> Administración TI </div>
-                <progress min="0" max="8" value="3" class="progreso"></progress>
-            </div>
-            <div class="contenedor-barra">
-                <div class="skill"> Programación </div>
-                <progress min="0" max="8" value="3" class="progreso"></progress>
-            </div>
-            <div class="contenedor-barra">
-                <div class="skill"> Desarrollo </div>
-                <progress min="0" max="8" value="3" class="progreso"></progress>
-            </div>
-        </div>
-    </section>
-
-    <section class="lenguajes">
-        <h2 class="label--title"> Lenguajes de programación </h2>
-        <div class="contenedor--lenguajes">
-            <li class="lenguaje">C++</li>
-            <li class="lenguaje">PL/SQL</li>
-            <li class="lenguaje">VBA</li>
-            <li class="lenguaje">Python</li>
-            <li class="lenguaje">HTML</li>
-            <li class="lenguaje">CSS3</li>
-            <li class="lenguaje">JAVA</li>
-            <li class="lenguaje">Javascript</li>
-        </div>
-    </section>
-
-    <section class="preparacion">
-        <h2 class="label--title"> Preparación Académica </h2>
-        <div class="contenedor--cursos"> 
-            <div class="cursos--tarjetas">
-                <img src="./img/udglogo.png" alt="" class="img-preparacion">
-                <div class="cursos-detalle">
-                    <div class="curso--titulo"> Universidad de Guadalajara UDG</div>
-                    <p class="info-curso">Licenciatura en Tecnologías de la Información</p>
-                    <p class="info-horas">4to Semestre</p>
-                    <div class="importante">En curso</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="preparacion">
-        <h2 class="label--title"> cURSOS </h2>
-        <div class="contenedor--cursos"> 
-           <div class="cursos--tarjetas">
-                <img src="./img/Udemy.png" alt="" class="img-preparacion">
-                <div class="cursos-detalle">
-                    <div class="curso--titulo"> Apasoft Training </div>
-                    <p class="info-curso">Aprende oracle PL/SQL desde cero</p>
-                    <p class="info-horas">12 Horas</p>
-                    <div class="importante">Completo</div>
-                </div>
-            </div>
-
-            <div class="cursos--tarjetas">
-                <img src="./img/Udemy.png" alt="" class="img-preparacion">
-                <div class="cursos-detalle">
-                    <div class="curso--titulo"> Apasoft Training </div>
-                    <p class="info-curso">Oracle PL/SQL Avanzado </p>
-                    <p class="info-horas">10 Horas </p>
-                    <div class="importante">Completo</div>
-                </div>
-            </div>
-
-            <div class="cursos--tarjetas">
-                <img src="./img/Udemy.png" alt="" class="img-preparacion">
-                <div class="cursos-detalle">
-                    <div class="curso--titulo">Dr. Angela Yu </div>
-                    <p class="info-curso">The Complete 2023 Web development Bootcamp</p>
-                    <p class="info-horas">62 Horas</p>
-                    <div class="importante">En curso</div>
-                </div>
-            </div>
-
-            <div class="cursos--tarjetas">
-                <img src="./img/Udemy.png" alt="" class="img-preparacion">
-                <div class="cursos-detalle">
-                    <div class="curso--titulo">Dr. Angela Yu </div>
-                    <p class="info-curso">100 Days of Code: The Complete Python Pro Bootcamp</p>
-                    <p class="info-horas">54 Horas</p>
-                    <div class="importante">En curso</div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="contact">
-        <h2 class="label--title"> Contacto </h2>
-        <div class="contenedor-contacto">
-            <div class="contacto--detalle">
-                <p class="contacto--texto">+52 (33) 1468-1824</p>
-                <p class="contacto--texto">sus.contrerasr@gmail.com</p>
-                <p class="contacto--texto localidad">Guadalajara, Jalisco, México</p>
-            </div>
-            <img src="./img/contact.jpg" alt="" class="contacto-img">
-        </div>
-
-    </section>
-
-</div> <!-- Fin del cuerpo -->
+            // Actualizar cuando el DOM esté listo
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', function() {
+                    const spanEdad = document.getElementById('mi-edad');
+                    if (spanEdad) spanEdad.textContent = calcularEdad();
+                });
+            } else {
+                const spanEdad = document.getElementById('mi-edad');
+                if (spanEdad) spanEdad.textContent = calcularEdad();
+            }
+        })();
+    </script>
 </body>
+
 </html>
